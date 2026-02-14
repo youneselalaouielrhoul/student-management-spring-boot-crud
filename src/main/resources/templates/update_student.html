@@ -9,6 +9,15 @@
 </head>
 
 <body>
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a th:href="@{/students}" class="navbar-brand">Student Management</a>
+            <div class="navbar-links">
+                <a th:href="@{/students}" class="nav-link">Students</a>
+                <a th:href="@{/students/new}" class="nav-link">Add Student</a>
+            </div>
+        </div>
+    </nav>
     <div class="container">
         <div class="row">
             <div class="col-md-6 col-lg-6 col-sm-6 container justify-content-center card">
@@ -16,17 +25,17 @@
                 <div class="card-body">
                     <form th:action="@{/students/{id}(id=${student.id})}" th:object="${student}" method="post">
                         <div class="form_group">
-                            <lable> student First Name</lable>
+                            <label> student First Name</label>
                             <input type="text" name="firstName" th:field="*{FirstName}" class="form-control" place
                                 holder="enter your first name" />
                         </div>
                         <div class="form_group">
-                            <lable> student Last Name</lable>
+                            <label> student Last Name</label>
                             <input type="text" name="lastName" th:field="*{LastName}" class="form-control" place
                                 holder="enter your last name" />
                         </div>
                         <div class="form_group">
-                            <lable> student Email</lable>
+                            <label> student Email</label>
                             <input type="email" name="email" th:field="*{email}" class="form-control" place
                                 holder="enter your email" />
                         </div>

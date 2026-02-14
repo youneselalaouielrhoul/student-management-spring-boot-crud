@@ -9,6 +9,15 @@
 </head>
 
 <body>
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a th:href="@{/students}" class="navbar-brand">Student Management</a>
+            <div class="navbar-links">
+                <a th:href="@{/students}" class="nav-link">Students</a>
+                <a th:href="@{/students/new}" class="nav-link">Add Student</a>
+            </div>
+        </div>
+    </nav>
     <div class="container">
         <div>
             <h1> List students</h1>
@@ -19,7 +28,7 @@
             </div>
         </div>
         <table class="table table-striped">
-            <thead class="table-dark">
+            <thead>
                 <tr>
                     <th> student first name</th>
                     <th> student last name</th>
