@@ -173,22 +173,6 @@ To create a WAR file for deployment:
 
 The WAR file will be generated in the `target/` directory.
 
-## 📝 License
 
-This project is open source and available under the [MIT License](LICENSE).
-
-## 👨‍💻 Author
-
-**Younes**
-
-## 🤝 Contributing
-
-Contributions, issues, and feature requests are welcome! Feel free to check the [issues page](https://github.com/yourusername/student-management-system/issues).
-
-## 📧 Contact
-
-If you have any questions or suggestions, feel free to reach out!
-
----
 
 ⭐ **If you find this project useful, please consider giving it a star!** ⭐
